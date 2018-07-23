@@ -40,6 +40,7 @@ app.get('/balance', (req, res) => {
     })
     .catch(error => {
       console.error(error);
+      res.status(500).send(error);
     });
 });
 
